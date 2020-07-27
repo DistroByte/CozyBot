@@ -1,5 +1,14 @@
 import React from 'react';
+import { Button } from '@chakra-ui/core';
 
 export function LandingPage(props) {
-	return <h1>Landing Page</h1>;
+	const login = () => (window.location.href = 'http://localhost:3001/api/auth/discord');
+	return (
+		<div>
+			<h1>Landing Page</h1>
+			<Button onClick={login} variantColor='orange'>
+				Login
+			</Button>
+		</div>
+	);
 }

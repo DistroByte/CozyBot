@@ -15,6 +15,7 @@ const routes = require('./routes');
 mongoose.connect('mongodb://localhost/cozybot', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useCreateIndex: true,
 });
 
 app.use(cors({
